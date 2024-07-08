@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
-		<link rel="stylesheet" href="./assets/style.css" />
+		<link rel="stylesheet" href="./assets/style.min.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -49,7 +49,6 @@
 			</nav>
 		</header>
 		<main>
-			<meta itemprop="description" content="Photographe portraits et événementiel à Bordeaux" />
 			<div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
 				<meta itemprop="streetAddress" content="68 avenue Alsace-Lorraine" />
 				<meta itemprop="addressLocality" content="Bordeaux" />
@@ -94,7 +93,7 @@
 				</div>
 				<div id="about-me">
 					<h2 class="about-me__title">A propos de moi</h2>
-					<h3 class="about-me__subtitle">Photographe portraits et événementiel à Bordeaux</h3>
+					<h3 class="about-me__subtitle" itemprop="description">Photographe portraits et événementiel à Bordeaux</h3>
 					<h4 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j'y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h4>
 					<p>
 						Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n'avons qu'une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
@@ -197,7 +196,6 @@
 		</main>
 		<script type="module" src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 		<script
-			type="module"
 			src="https://code.jquery.com/jquery-3.4.1.min.js"
 			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 			crossorigin="anonymous"
