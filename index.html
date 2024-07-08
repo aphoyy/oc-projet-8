@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
+		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
 		<link rel="stylesheet" href="./assets/style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,24 +12,24 @@
 			rel="stylesheet"
 		/>
 		<title>Nina Carducci</title>
-		<meta name="description" content="Photographe portraits & événementiel à Bordeaux" />
+		<meta name="description" content="Photographe portraits et événementiel à Bordeaux" />
 		<!-- Facebook meta tags -->
 		<meta property="og:site_name" content="Nina Carducci" />
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="Nina Carducci" />
-		<meta property="og:description" content="Photographe portraits & événementiel à Bordeaux" />
+		<meta property="og:description" content="Photographe portraits et événementiel à Bordeaux" />
 		<meta property="og:image" content="https://aphoyy.github.io/oc-projet-8/assets/images/nina-banner.jpg" />
 		<meta property="og:url" content="https://aphoyy.github.io/oc-projet-8/" />
 		<!-- Twitter meta tags -->
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content="Nina Carducci" />
-		<meta name="twitter:description" content="Photographe portraits & événementiel à Bordeaux" />
+		<meta name="twitter:description" content="Photographe portraits et événementiel à Bordeaux" />
 		<meta name="twitter:image" content="https://aphoyy.github.io/oc-projet-8/assets/images/nina-banner.jpg" />
 		<meta name="twitter:url" content="https://aphoyy.github.io/oc-projet-8/" />
 	</head>
-	<body>
+	<body itemscope itemtype="https://schema.org/ProfessionalService">
 		<header class="top-header">
-			<h1 class="name">Nina Carducci</h1>
+			<h1 class="name" itemprop="name">Nina Carducci</h1>
 			<nav class="nav">
 				<ul>
 					<li><a href="#about">À propos</a></li>
@@ -49,7 +49,18 @@
 			</nav>
 		</header>
 		<main>
-			<section id="banner">
+			<meta itemprop="description" content="Photographe portraits et événementiel à Bordeaux" />
+			<div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+				<meta itemprop="streetAddress" content="68 avenue Alsace-Lorraine" />
+				<meta itemprop="addressLocality" content="Bordeaux" />
+				<meta itemprop="postalCode" content="33200" />
+				<meta itemprop="addressRegion" content="Gironde" />
+				<meta itemprop="addressCountry" content="FR" />
+			</div>
+			<meta itemprop="telephone" content="05 56 67 78 89" />
+			<meta itemprop="openingHours" content="Mo-Fr 10:00-19:00" />
+			<meta itemprop="priceRange" content="50€-400€" />
+			<div id="banner">
 				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 					<nav class="carousel-indicators">
 						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -76,31 +87,34 @@
 						<span class="visually-hidden">Next</span>
 					</button>
 				</div>
-			</section>
+			</div>
 			<section id="about">
 				<div class="picture left">
-					<img src="./assets/images/nina.jpg" alt="Portait de Nina Carducci" />
+					<img src="./assets/images/nina.jpg" alt="Portait de Nina Carducci" itemprop="image" />
 				</div>
-				<article id="about-me">
+				<div id="about-me">
 					<h2 class="about-me__title">A propos de moi</h2>
-					<h3 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j'y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h3>
-					<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n'avons qu'une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
-						C'est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l'amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
-				</article>
+					<h3 class="about-me__subtitle">Photographe portraits et événementiel à Bordeaux</h3>
+					<h4 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j'y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h4>
+					<p>
+						Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n'avons qu'une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
+						C'est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l'amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.
+					</p>
+				</div>
 			</section>
 			<section id="gallery">
 				<h3 class="title">Portfolio</h3>
 				<div class="container py-3">
 					<div class="gallery" style="display: none">
-						<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul.jpg" alt="Photo d'un concert" />
-						<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou.jpg" alt="Photo d'entreprise" />
-						<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman.jpg" alt="Photo d'entreprise" />
-						<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing.jpg" alt="Photo de marriage" />
-						<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji.jpg" alt="Portait" />
-						<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens.jpg" alt="Photo de marriage" />
-						<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg.jpg" alt="Portrait" />
-						<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill.jpg" alt="Photo d'un concert" />
-						<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe.jpg" alt="Photo d'entreprise" />
+						<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul.jpg" alt="Foule sous une lumière rouge lors d'un concert" />
+						<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou.jpg" alt="Homme en costard avec une montre" />
+						<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman.jpg" alt="Femme qui sourit à son travail" />
+						<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing.jpg" alt="Mains qui se rejoignent pour un marriage" />
+						<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji.jpg" alt="Portait d'un homme avec les yeux fermés" />
+						<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens.jpg" alt="Photo du mari et de sa femme qui tient un bouquet" />
+						<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg.jpg" alt="Portrait d'une jeune femme avec des lunettes" />
+						<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill.jpg" alt="Photo d'un chanteur devant de la fumée" />
+						<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe.jpg" alt="Femme qui rigole en travaillant" />
 					</div>
 				</div>
 				<div class="quote">
@@ -163,8 +177,9 @@
 				<div class="container">
 					<div class="form-container">
 						<h3>Une question ? Une demande de devis ?</h3>
-						<p> N'hésitez pas à m'écrire ! Je vous répondrais en moins de 24 heures</p>
-						<form action="" method="post">
+						<p>N'hésitez pas à m'écrire ! Je vous répondrais en moins de 24 heures.</p>
+						<p>Téléphone:  05 56 67 78 89 du lundi au vendredi de 10h à 19h.</p>
+						<form action="#" method="post">
 							<label for="nom">Nom</label>
 							<input type="text" name="nom" id="nom" />
 							<label for="email">Email</label>
@@ -180,13 +195,14 @@
 				</div>
 			</section>
 		</main>
-		<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+		<script type="module" src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 		<script
+			type="module"
 			src="https://code.jquery.com/jquery-3.4.1.min.js"
 			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 			crossorigin="anonymous"
 		></script>
-		<script src="./assets/maugallery.js"></script>
-		<script src="./assets/scripts.js"></script>
+		<script type="module" src="./assets/maugallery.min.js"></script>
+		<script type="module" src="./assets/scripts.min.js"></script>
 	</body>
 </html>
